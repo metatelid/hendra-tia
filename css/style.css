@@ -1,0 +1,104 @@
+.modal-body{
+    background-image: url('../img/background_modal.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media screen and (max-width:420px){
+    #modalContent1{
+        transform: translate(0, 50%);
+    }
+
+    #modalContent2{
+        transform: translate(0, 120%);
+    }
+}
+
+body{
+    background-image: url('../img/background_container.jpg');
+    background-position: center;
+    background-size: contain;
+}
+
+.navbar{
+    background-color: #4e5f79;
+}
+
+.nav-link{
+    color:#fff;
+    font-size: 8vw;
+}
+
+.jumbotron{
+    background-image: url('../img/jumbotron.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5rem;
+    padding-bottom: 25rem;
+}
+
+a{
+    text-decoration:none;
+}
+
+#clockdiv{
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
+
+#clockdiv > div{
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 3px;
+    background: #44444463;
+    display: inline-block;
+}
+
+#clockdiv div > span{
+    padding: 15px;
+    border-radius: 3px;
+    background: #434343a6;
+    display: inline-block;
+}
+
+.smalltext{
+    padding-top: 5px;
+    font-size: 16px;
+    font-family: 'MonteCarlo', cursive;
+}
+
+#name{
+    background-image: url('../img/background_foto.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#story .col-md-3{ 
+    background-image: url('../img/textbox.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#story .col-md-3 p{
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+#date{
+    background-image: url('../img/background_date.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#gallery{
+    background-color: #4e5f79;
+    margin-top: -2px
+}

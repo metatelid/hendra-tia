@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <link rel="stylesheet"  href="css/lightslider.css"/>
+
+
+  <!--CSS-->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+  <!-- CSS AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!--  icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+  <!--Google Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+
+  <!-- My CSS -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <title>The Wedding of Hendra & Tia</title>
+  <meta name="description" content="Minggu, 06 Maret 2022" />
+  <meta property="og:image" content="img/thumb/modal.jpg" />
+  <meta property="og:image:width" content="128" />
+  <meta property="og:image:height" content="118" />
+
+</head>
+
+<body>
+
+  <!-- Modal -->
+  <button type="button" class="btn btn-primary btn-modal d-none" data-bs-toggle="modal" data-bs-target="#exampleModal">Launch demo modal</button>
+  <div class="modal fade show" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalFullscreenLabel" style="display: block;" aria-modal="true" role="dialog">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="row justify-content-center" id="modalContent1">
+            <div class="col-6 text-center">
+              <img class="img-fluid mb-3" src="img/modal.jpg">
+              <h1 class="text-white" style="font-family: 'Yellowtail', cursive;">Hendra & Tia</h1>
+            </div>
+          </div>
+          <div class="row justify-content-center" id="modalContent2">
+            <div class="col-10 text-center">
+              <p class="text-white">"Tanpa Mengurangi Rasa Hormat, Kami Mengundang Anda Untuk hadir Di Acara Pernikahan Kami."</p>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="playAudio()"><i class="bi bi-envelope-open"></i> Open Invitation</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <audio id="music" hidden loop>
+    <source src="img/music.mp3" type="">
+  </audio>
+  <!-- akhir modal -->
+
+  <!-- Navbar -->  
+  <nav class="navbar navbar-light fixed-bottom">
+    <div class="container" style="background-color: #4e5f79;">
+      <div class="container-fluid">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#home"><i class="bi bi-house-door"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#story"><i class="bi bi-heart-half"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#date"><i class="bi bi-calendar-check"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery"><i class="bi bi-images"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#message"><i class="bi bi-chat-left-text"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- akhir Navvbar -->
+
+  <!-- awal jumbotron -->
+  <div id="home" class="jumbotron text-center align-items-center">
+    <div class="row justify-content-center">
+      <div class="col">
+        <h1 class="text-white mx-auto" style="font-family: 'Yellowtail', cursive;">
+          Suhendra <i class="bi bi-suit-heart-fill text-danger"></i> Tia Nurul Safitri
+        </h1>
+        <p class="fs-1 text-white mx-auto">Invited</p>
+        <p class="fs-1 text-white mx-auto">20 Februari 2022</p>
+        <p class="fs-3 text-white">cooming soon</p>
+        <div id="clockdiv">
+            <div><span class="days"></span><div class="smalltext">Days</div></div>
+            <div><span class="hours"></span><div class="smalltext">Hours</div></div>
+            <div><span class="minutes"></span><div class="smalltext">Minutes</div></div>
+            <div><span class="seconds"></span><div class="smalltext">Seconds</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- akhir jumbotron -->
+
+  <!-- Sambutan -->
+  <div class="container-fluid" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000" style="background-color: white;">
+    <div class="row justify-content-center">
+      <div class="col-md-6 text-center pt-3">
+        <p>“Dan nikahkanlah orang-orang yang sendirian di antara kamu, dan orang-orang yang layak (berkawin) dari hamba-hamba sahayamu yang lelaki dan hamba-hamba sahayamu yang perempuan. jika mereka miskin, Allah akan memampukan mereka dengan kurnia-Nya. dan Allah Maha Luas (pemberian-Nya) lagi Maha mengetahui,” (QS An-Nur: 32).</p>
+      </div>
+    </div>
+    <div id="couple" class="row justify-content-center text-center mb-3 pt-3">
+      <div class="col-lg-4 mb-3" data-aos="fade-right">
+        <h1 style="font-family: 'Yellowtail', cursive;">Pasangan Mempelai</h1>
+      </div>
+    </div>
+    <div class="row justify-content-center mb-3 text-center">
+      <div id="name" class="col-md-4">
+        <div class="row justify-content-center">
+          <div class="col-9 pt-5 pb-5" data-aos="flip-left">
+            <img src="img/groom.jpg" class="rounded-circle img-thumbnail">
+            <h2 style="font-family: 'Yellowtail', cursive;">Suhendra ( hendra/suhe/edot)</h2>
+            <p>Putra dari Bapak Rahmat dan Ibu Fatimah</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1">
+        <p id="love" style="font-size: 15vh;"><i class="bi bi-suit-heart-fill text-danger"></i></p>
+      </div>
+      <div id="name" class="col-md-4">
+        <div class="row justify-content-center">
+          <div class="col-9 pt-5 pb-5" data-aos="flip-left">
+            <img src="img/bride.jpg" class="rounded-circle img-thumbnail">
+            <h2 style="font-family: 'Yellowtail', cursive;">Tia Nurul Safitri (Ayang/tya)</h2>
+            <p>Putri dari Bapak Eef Aepudin dan Ibu Tuti Suryani</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- akhir sambutan -->
+
+  <!--story-->  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#4e5f79" fill-opacity="1" d="M0,160L48,138.7C96,117,192,75,288,101.3C384,128,480,224,576,250.7C672,277,768,235,864,197.3C960,160,1056,128,1152,133.3C1248,139,1344,181,1392,202.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    <div class="container-fluid" style="background-color: #4e5f79; margin-bottom: -1.1rem; margin-top: -1px; ">
+      <div class="row text-center mb-3">
+        <div class="col text-white">
+          <h1 style="font-family: 'Yellowtail', cursive;">Our Story</h1>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#4e5f79" fill-opacity="1" d="M0,32L48,53.3C96,75,192,117,288,133.3C384,149,480,139,576,112C672,85,768,43,864,26.7C960,11,1056,21,1152,53.3C1248,85,1344,139,1392,165.3L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+
+    <div class="container">
+      <div id="story" class="row justify-content-center mt-3 mb-3 text-center">
+        <div class="col-md-3 p-2" data-aos="fade-down">
+          <p>Kami bertemu tepat diminggu ke 3 bulan September 2020, melaluI beberapa orang perantara akhirnya kami bisa berkenalan, berkomunikasi dan bertukar pkiran juga pendapat,akhirnya kami berlanjut dengan komunikasi yg lebih intens.</p>
+        </div>
+        <div class="col-md-3 p-2" data-aos="fade-down">
+          <p>setelah menjalin hubungan dekat selama 5 bulan, memasuki bulan ke 6,tepatnya pda tgl 02 maret 2021 kami melangsungkan acara lamaran, pertemuan dua kluarga yg mana terdapat misi pasti didalamnya, yakni melanjutkan ke jenjang yg lebih serius yaitu pernikahan.</p>
+        </div>
+        <div class="col-md-3 p-2" data-aos="fade-down">
+          <p style="padding-bottom: 4.5rem;">akhirnya 20 februari 2022 menjadi tanggal yang kami pilih untuk memulai perjalanan hidup sebagai suami istri. Insyaallah dengan Ridho Allah, dan restu ayah ibu, kami siap utk menjalani kisah baru kami.</p>
+        </div>
+      </div>
+    </div>
+
+  <!--akhir date-->
+
+  <!--date-->  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#4e5f79" fill-opacity="1" d="M0,160L48,138.7C96,117,192,75,288,101.3C384,128,480,224,576,250.7C672,277,768,235,864,197.3C960,160,1056,128,1152,133.3C1248,139,1344,181,1392,202.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    <div class="container-fluid" style="background-color: #4e5f79; margin-bottom: -1.1rem; margin-top: -1px; ">
+      <div class="row text-center mb-3">
+        <div class="col text-white">
+          <h1 style="font-family: 'Yellowtail', cursive;">Date</h1>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#4e5f79" fill-opacity="1" d="M0,32L48,53.3C96,75,192,117,288,133.3C384,149,480,139,576,112C672,85,768,43,864,26.7C960,11,1056,21,1152,53.3C1248,85,1344,139,1392,165.3L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+
+    <div class="container" data-aos="fade-up">
+      <div id="date" class="row justify-content-center m-3 shadow-lg text-center">
+        <div class="col-lg-3 m-3" style="border: 1px solid white; background-color: #ffffff3d;">
+          <h1>Akad</h1>
+          <hr class="featurette-divider">
+          <div class="row justify-content-center">
+            <div class="col">
+              <h1><i class="bi bi-clock"></i></h1>
+              <p>09:00 AM<br/>s/d Selesai</p>
+            </div>
+            <div class="col">
+              <h1><i class="bi bi-calendar-check"></i></h1>
+              <p>Sunday 20<br/>Februari 2022</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-3">
+          <p>lokasi kp.hegarmanah rt002/rw013, ds.tenjolaya,pasir jambu,Ciwidey</p>
+        </div>
+
+        <div class="col-lg-3 mb-3">
+          <div class="row mb-3">
+            <div class="col">
+              <a class="btn btn-outline-primary btn-lg" role="button" target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&tmeid=MTU4dnVjOTJpNzAxbHU0aGlxZ2dkbWw1cXUgbWVwcmF0ZWxAbQ&tmsrc=mepratel%40gmail.com" style="width: 100%;"><i class="bi bi-calendar-check"></i><br/>Save Date</a>
+            </div>
+            <div class="col">
+              <a class="btn btn-outline-primary btn-lg" role="button" target="_blank" href="https://goo.gl/maps/9fntJhtGyv8ooPmp9" style="width: 100%;"><i class="bi bi-geo-alt-fill"></i><br/>Open Map</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 m-3" style="border: 1px solid white; background-color: #ffffff3d;">
+          <h1>Resepsi</h1>
+          <hr class="featurette-divider">
+          <div class="row justify-content-center">
+            <div class="col">
+              <h1><i class="bi bi-clock"></i></h1>
+              <p>10:00 AM<br/>s/d Selesai</p>
+            </div>
+            <div class="col">
+              <h1><i class="bi bi-calendar-check"></i></h1>
+              <p>Sunday 06<br/>Maret 2022</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <p>lokasi kp.sirahsitu, rt002/rw006 ds.cikadu,kc sindangkerta.</p>
+        </div>
+        <div class="col-lg-3">
+          <div class="row mb-3">
+            <div class="col">
+              <a class="btn btn-outline-primary btn-lg" role="button" target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&tmeid=N3AwNWp1MGlqbTdoY3QxajVjOHRiZ2E0ZnYgbWVwcmF0ZWxAbQ&tmsrc=mepratel%40gmail.com" style="width: 100%;"><i class="bi bi-calendar-check"></i><br/>Save Date</a>
+            </div>
+            <div class="col">
+              <a class="btn btn-outline-primary btn-lg" role="button" target="_blank" href="https://goo.gl/maps/EAkHm6hRhRo3Ko146" style="width: 100%;"><i class="bi bi-geo-alt-fill"></i><br/>Open Map</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row pt-5">
+        <div class="col  text-center">
+          <h1>LIVE STREAMING</h1>
+        </div>
+      </div>
+      <div class="row mb-5 justify-content-center">
+        <div class="col">
+          <a href="https://www.instagram.com/suhendra019/" style="text-decoration:none; color: #000;"><img src="img/instagram.png" style="height: 50px;">@suhendra019</a>
+        </div>
+        <div class="col">
+          <a href="https://www.instagram.com/tyaaanurul/" style="text-decoration:none; color: #000;"><img src="img/instagram.png" style="height: 50px;">@tyaaanurul</a>
+        </div>
+      </div>
+    </div>
+
+  <!--akhir date-->
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#4e5f79" fill-opacity="1" d="M0,288L0,192L240,192L240,128L480,128L480,288L720,288L720,256L960,256L960,160L1200,160L1200,288L1440,288L1440,320L1200,320L1200,320L960,320L960,320L720,320L720,320L480,320L480,320L240,320L240,320L0,320L0,320Z"></path></svg>
+    <div id="gallery" class="container-fluid">
+      <div class="row mb-3">
+        <div class="col text-white text-center">
+          <h1 style="font-family: 'Yellowtail', cursive;">Our Gallery</h1>
+        </div>
+      </div>
+      <div class="demo">
+        <div class="item">            
+            <div class="clearfix" style="max-width:474px;">
+                <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
+                    <li data-thumb="img/thumb/cS-1.jpg"> 
+                        <img src="img/cS-1.jpg" />
+                    </li>
+                    <li data-thumb="img/thumb/cS-2.jpg"> 
+                        <img src="img/cS-2.jpg" />
+                    </li>
+                    <li data-thumb="img/thumb/cS-3.jpg"> 
+                        <img src="img/cS-3.jpg" />
+                    </li>
+                    <li data-thumb="img/thumb/cS-4.jpg"> 
+                        <img src="img/cS-4.jpg" />
+                    </li>
+                    <li data-thumb="img/thumb/cS-5.jpg"> 
+                        <img src="img/cS-5.jpg" />
+                    </li>
+                    <li data-thumb="img/thumb/cS-6.jpg"> 
+                        <img src="img/cS-6.jpg" />
+                    </li>
+                    <li data-thumb="img/thumb/cS-7.jpg"> 
+                        <img src="img/cS-7.jpg" />
+                    </li>
+                    <li data-thumb="img/thumb/cS-8.jpg"> 
+                        <img src="img/cS-8.jpg" />
+                    </li>
+                    <li data-thumb="img/thumb/cS-9.jpg"> 
+                        <img src="img/cS-9.jpg" />
+                    </li>
+                    <li data-thumb="img/thumb/cS-10.jpg"> 
+                        <img src="img/cS-10.jpg" />
+                    </li>
+                    <li data-thumb="img/thumb/cS-11.jpg"> 
+                        <img src="img/cS-11.jpg" />
+                    </li>
+                    <li data-thumb="img/thumb/cS-12.jpg"> 
+                        <img src="img/cS-12.jpg" />
+                    </li>
+                    <li data-thumb="img/thumb/cS-13.jpg"> 
+                        <img src="img/cS-13.jpg" />
+                    </li>
+                    <li data-thumb="img/thumb/cS-14.jpg"> 
+                        <img src="img/cS-14.jpg" />
+                    </li>
+                    <li data-thumb="img/thumb/cS-15.jpg"> 
+                        <img src="img/cS-15.jpg" />
+                    </li>
+                    <li data-thumb="img/thumb/cS-16.jpg"> 
+                        <img src="img/cS-16.jpg" />
+                    </li>
+                    <li data-thumb="img/thumb/cS-17.jpg"> 
+                        <img src="img/cS-17.jpg" />
+                    </li>
+                    <li data-thumb="img/thumb/cS-18.jpg"> 
+                        <img src="img/cS-18.jpg" />
+                    </li>
+                    <li data-thumb="img/thumb/cS-19.jpg"> 
+                        <img src="img/cS-19.jpg" />
+                    </li>
+                    <li data-thumb="img/thumb/cS-20.jpg"> 
+                        <img src="img/cS-20.jpg" />
+                    </li>
+                    <li data-thumb="img/thumb/cS-21.jpg"> 
+                        <img src="img/cS-21.jpg" />
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </div>  
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#4e5f79" fill-opacity="1" d="M0,288L0,192L240,192L240,128L480,128L480,288L720,288L720,256L960,256L960,160L1200,160L1200,288L1440,288L1440,0L1200,0L1200,0L960,0L960,0L720,0L720,0L480,0L480,0L240,0L240,0L0,0L0,0Z"></path></svg>
+  </section>
+  <!-- Akhir Story -->
+
+  <!-- Guest -->
+  <section style="padding-top: 5rem;">
+    <div id="guest" class="container-fluid text-center">
+      <h1 style="font-family: 'Yellowtail', cursive;" class="p-3" data-aos="fade-down">For Guest</h1>
+      <div class="row justify-content-around text-center">
+        <div class="col-md-4" data-aos="zoom-out">
+          <h3 class="featurette-heading">Panduan Tamu<br/></h3>
+          <p>Tamu diharapkan menjaga protokol kesehatan, tetap menggunakan masker, mencuci tangan, dan menjaga jarak dengan tamu lain.</p>
+        </div>
+      </div>
+      <div class="row justify-content-center text-center mb-3">
+        <div class="col-md-5" data-aos="zoom-out">
+          <h3 class="featurette-heading">Give a gift<br/></h3>
+          <p>Tanpa mengurangi rasa hormat, untuk melengkapi kebahagiaan pengantin, Anda dapat memberikan tanda kasih melalui nomor rekening berikut ini :</p>
+        </div>
+      </div>
+      <div class="row justify-content-around text-center">
+        <div class="col border rounded-3 mb-3">
+          <div class="container" style="background-color: #fff;" data-aos="zoom-out">
+            <h3 class="featurette-heading"><img class="img-fluid" src="img/mandiri.png"><br/></h3>
+            <p>No. Rekening :</p>
+            <div class="input-group mb-3">
+              <button class="btn btn-outline-dark" type="button" id="button-addon1" onclick="copy_mandiri()"><i class="bi bi-clipboard-plus"></i> Copy</button>
+              <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" value="3790257200" id="mandiri" readonly />
+            </div>
+            <p>A. N. Tia Nurul Safitri</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- akhir guest -->
+
+  <!-- Turut mengundang -->
+  <div id="film" class="container shadow-lg text-center mt-5" style="background-color: #f7f7f7;">
+    <h1 style="font-family: 'Yellowtail', cursive;" class="p-3">Turut Mengundang</h1>
+    <div class="row justify-content-center">
+      <div class="col-md-6 text-center" data-aos="flip-down">
+        <h4>keluarga besar Bapak Edi (ciwidey), keluarga besar Bapak Devi Sy Chobir (kepala desa), keluarga besar Bapak Ustadz. Oding M, keluarga besar Bapak Rt Mamad, keluarga besar Bapak Sutisna, keluarga besar Bapak Nandang, keluarga besar Bapak Toha</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-center">
+        <p>
+          Klik untuk mematikan lagu --->
+          <button type="button" class="btn btn-success play d-none" onclick="playAudio()"><i class="bi bi-volume-mute-fill"></i></button>
+          <button type="button" class="btn btn-warning pause" onclick="pauseAudio()"><i class="bi bi-volume-up-fill"></i></button>
+        <p>
+      </div>
+    </div>
+  </div>
+  <!-- Turut Mengundang -->
+
+  <!-- message -->
+  <div id="message" class="container-fluid text-center mt-5">
+    <h1 style="font-family: 'Yellowtail', cursive;" data-aos="flip-left">Berikan Ucapan Untuk Kedua Mempelai</h1>
+    <div class="row justify-content-center">
+      <div class="col-md-10" style="background-color: #f7f7f7;" data-aos="flip-up">
+        <div class="commentbox"></div>
+      </div>
+    </div>
+  </div>
+  <!-- akhir message -->
+
+  <footer class="text-white pb-3" style="background-color: #0e110c;">
+    <div style="padding-bottom: 2rem;" class="row justify-content-center pt-3">
+      <div class="col-md-5 mb-3 text-center">
+        <h4>Web Programmer : MetaCode&lt;/&gt;</h4>
+        <a style="color: #fff;" href="https://www.instagram.com/_zulpratama/"><i class="bi bi-instagram"></i>   MetaCode<br/></a>
+        <a style="color: #fff;" href="#"><i class="bi bi-envelope"></i>   mepratel@gmail.com<br/></a>
+        <a style="color: #fff;" href="https://wa.me/6281220531990"><i class="bi bi-whatsapp"></i>   (+62) 8122 0531 990<br/></a>
+      </div>
+    </div>
+    <p class="text-center">Created With Love<i class="bi bi-suit-heart-fill text-danger"></i> By <a href="https://www.instagram.com/_zulpratama/" class="text-white fw-bold">Juliandi Pratama</a></p>
+  </footer>
+
+  <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  
+  <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script> 
+  <script>commentBox('5661605530435584-proj')</script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 200,
+      delay: 100,
+      duration: 2000,
+    });
+  </script>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/TextPlugin.min.js"></script>
+  <script type="text/javascript">
+    setInterval(function(){gsap.from('#love', { duration: 1, rotateY: 360, opacity: 0 });}, 3000);
+  </script>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="js/lightslider.js"></script> 
+  <script>
+    $(document).ready(function() {
+    $("#content-slider").lightSlider({
+              loop:true,
+              keyPress:true
+          });
+          $('#image-gallery').lightSlider({
+              gallery:true,
+              item:1,
+              thumbItem:9,
+              slideMargin: 0,
+              speed:500,
+              auto:true,
+              loop:true,
+              onSliderLoad: function() {
+                  $('#image-gallery').removeClass('cS-hidden');
+              }  
+          });
+  });
+  </script>
+  <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+
+</body>
+</html
